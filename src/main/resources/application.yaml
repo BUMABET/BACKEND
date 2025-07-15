@@ -1,0 +1,23 @@
+spring:
+  application:
+    name=heosejin
+  datasource:
+    url: jdbc:mysql://localhost:3306/heosejin
+    username: root
+    password: kdoornega0128
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+google:
+  client-id : ${GOOGLE_CLIENT_ID}
+  secret-key : ${GOOGLE_SECRET_KEY}
+  redirect-uri: http://10.129.57.45:5555/auth/google/callback
+
+jwt:
+  access-exp: 900
+  refresh-exp: 1209600
+  prefix: "Bearer "
+  header: "Authorization"
+  secret-key: "adkosmandjadjasndkandsnajasdmkasdmksaldmkasddsnajdsjkadsj"
+
+server:
+  port: 5555
